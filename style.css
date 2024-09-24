@@ -1,0 +1,111 @@
+*{
+    margin:0; 
+    padding:0; 
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif; 
+    line-height: 1.5; /* muda a altura dos textos*/
+    background-color: #f9f9f9; /* muda o plano de fundo da imagem*/
+    text-shadow: 1px 1px 2px black;
+}
+
+nav{
+    position: fixed; /*fixa algum elemento na tela*/
+    top:0px; /*alterna a posição fixa de algum elemento na tela*/
+    width:100%; /* especifica a largura da barra de navegação*/
+    background-color: #3333338c;/* alterna o plano de fundo da barra de navegação*/
+    padding: 20px 0; /* o primeiro valor é vertical, o segundo é horizontal.*/
+}
+
+nav ul{
+    list-style-type: none; /*tira os marcadores da lista*/
+    display:flex; /*organiza de maneira flexível os itens da lista.*/
+    justify-content: center;/*alinhamento horizontal,depende do display flex para funcionar.*/
+}
+nav ul li{
+    margin: 0 30px; /*altera a margem dos elementos da barra de navegação*/
+
+}
+nav ul li a{
+    color: white; /*alterna a cor dos elementos da barra de navegação em si*/
+    text-decoration: none; /*altera a decoração dos elementos da barra de navegação*/
+    font-size: 18px; /*altera o tamanho dos elementos dentro da barra de navegação*/
+    padding: 10px;/* altera a separação dos elementos dentro da barra de navegação*/
+    transition: color 0.5s;/*muda a cor e a transição da cor dos elementos da barra de navegação*/
+}
+nav ul li a:hover{
+    color: #fa0303; /*????????????????*/
+    text-decoration: underline;
+    
+}
+section:not(#home) /*formata apenas as sessões, exceto a sessão Home*/ {
+    padding: 100px 20px; /* muda a altura e largura dos textos na parte Home*/
+    text-align: center; /*muda a formatação dos textos e imagens para o centro da tela*/
+    display:flex; /*organiza de forma flexível e horizontalmente o conteúdo, quando possível.*/
+    justify-content: center; /*centraliza todo o conteúdo da página*/
+    align-items: center; /*alinhamento vertical*/
+    height: 100vh; /*muda a altura da home*/
+}
+
+
+#home{
+    /*background-color: #4a902e; */
+    background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/1ad8e0ec-1004-4308-be47-203a512f76cf/d1v0h8f-f9bb6bf1-8c41-437e-8628-765c0ee71316.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzFhZDhlMGVjLTEwMDQtNDMwOC1iZTQ3LTIwM2E1MTJmNzZjZlwvZDF2MGg4Zi1mOWJiNmJmMS04YzQxLTQzN2UtODYyOC03NjVjMGVlNzEzMTYuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.zV6pK-fEIf3-9fXsN_1MSIR-UUEjM__fVYMDPYIAyYI); /*muda o plano de fundo da home*/
+    background-size: cover; /*????????????*/
+    background-repeat: no-repeat; /* imagem não se repete durante a página*/
+    color: #d61515; /*altera a cor do H1 e P*/
+    height:100vh;
+    text-align: center;
+    display: flex; /* altera a altura da imagem de fundo*/
+    flex-direction: column; /* ?????????????*/
+    justify-content:center; /* centraliza o conteúdo*/
+    align-items: center; /* alinha os itens no centro*/
+    font-size: 1.5em; /* muda o tamanho das letras*/
+}
+.content {
+    display: flex; /*flexibiliza o conteúdo*/
+    flex-direction: row;/*?????????*/
+    align-items: center; /*alinha os itens no centro*/
+    justify-content: center;
+}
+.content img { /*imagem que está dentro da classe content img*/
+    width: 400px;
+    height: 300px;
+    object-fit: cover; /* para a imagem não perder a proporção*/
+    margin-right: 20px;
+    border-radius: 8px;
+}
+
+.content .text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.content .text h2{
+    font-size: 2em;
+    margin-bottom: 20px;
+    color:#f10606 /* altera a cor do h2*/
+}
+
+.content .text p{
+    font-size: 1.0em; /* muda o tamanho dos textos do elemento P*/
+    color:#ffffff;
+
+}
+#jogosclassicos{
+    background-color:#302929;
+    
+}
+#jogosdeacao {
+    background-color: #461313;
+}
+#orenascimento{
+    background-color: #242121;
+}
+#remakes{
+    background-color: #491c1c;
+   
+}
+
